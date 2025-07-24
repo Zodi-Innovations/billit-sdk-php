@@ -25,6 +25,6 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
-        "guzzlehttp/guzzle": "^8.0"
+        "guzzlehttp/guzzle": ">=6.2"
     }
 }
