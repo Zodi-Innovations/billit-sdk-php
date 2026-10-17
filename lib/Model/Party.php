@@ -104,7 +104,8 @@ class Party implements ModelInterface, ArrayAccess
         'role' => 'string',
         'internal_info' => 'string',
         'vat_deductable' => 'bool',
-        'default_reduction_percentage' => 'double'
+        'default_reduction_percentage' => 'double',
+        'identifiers' => '\Swagger\Client\Model\PartyIdentifier[]'
     ];
 
     /**
@@ -160,7 +161,8 @@ class Party implements ModelInterface, ArrayAccess
         'role' => null,
         'internal_info' => null,
         'vat_deductable' => null,
-        'default_reduction_percentage' => 'double'
+        'default_reduction_percentage' => 'double',
+        'identifiers' => null
     ];
 
     /**
@@ -237,7 +239,8 @@ class Party implements ModelInterface, ArrayAccess
         'role' => 'Role',
         'internal_info' => 'InternalInfo',
         'vat_deductable' => 'VATDeductable',
-        'default_reduction_percentage' => 'DefaultReductionPercentage'
+        'default_reduction_percentage' => 'DefaultReductionPercentage',
+        'identifiers' => 'Identifiers'
     ];
 
     /**
@@ -293,7 +296,8 @@ class Party implements ModelInterface, ArrayAccess
         'role' => 'setRole',
         'internal_info' => 'setInternalInfo',
         'vat_deductable' => 'setVatDeductable',
-        'default_reduction_percentage' => 'setDefaultReductionPercentage'
+        'default_reduction_percentage' => 'setDefaultReductionPercentage',
+        'identifiers' => 'setIdentifiers'
     ];
 
     /**
@@ -349,7 +353,8 @@ class Party implements ModelInterface, ArrayAccess
         'role' => 'getRole',
         'internal_info' => 'getInternalInfo',
         'vat_deductable' => 'getVatDeductable',
-        'default_reduction_percentage' => 'getDefaultReductionPercentage'
+        'default_reduction_percentage' => 'getDefaultReductionPercentage',
+        'identifiers' => 'getIdentifiers'
     ];
 
     /**
@@ -475,6 +480,7 @@ class Party implements ModelInterface, ArrayAccess
         $this->container['internal_info'] = isset($data['internal_info']) ? $data['internal_info'] : null;
         $this->container['vat_deductable'] = isset($data['vat_deductable']) ? $data['vat_deductable'] : null;
         $this->container['default_reduction_percentage'] = isset($data['default_reduction_percentage']) ? $data['default_reduction_percentage'] : null;
+        $this->container['identifiers'] = isset($data['identifiers']) ? $data['identifiers'] : null;
     }
 
     /**
@@ -1666,6 +1672,30 @@ class Party implements ModelInterface, ArrayAccess
     public function setDefaultReductionPercentage($default_reduction_percentage)
     {
         $this->container['default_reduction_percentage'] = $default_reduction_percentage;
+
+        return $this;
+    }
+
+    /**
+     * Gets identifiers
+     *
+     * @return \Swagger\Client\Model\PartyIdentifier[]
+     */
+    public function getIdentifiers()
+    {
+        return $this->container['identifiers'];
+    }
+
+    /**
+     * Sets identifiers
+     *
+     * @param \Swagger\Client\Model\PartyIdentifier[] $identifiers identifiers
+     *
+     * @return $this
+     */
+    public function setIdentifiers($identifiers)
+    {
+        $this->container['identifiers'] = $identifiers;
 
         return $this;
     }

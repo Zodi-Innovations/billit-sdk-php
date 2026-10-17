@@ -51,6 +51,7 @@ Name | Type | Description | Notes
 **internal_info** | **string** |  | [optional] 
 **vat_deductable** | **bool** |  | [optional] 
 **default_reduction_percentage** | **double** |  | [optional] 
+**identifiers** | [**\Swagger\Client\Model\PartyIdentifier[]**](PartyIdentifier.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

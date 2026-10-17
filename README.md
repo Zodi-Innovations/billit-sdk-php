@@ -182,6 +182,7 @@ Class | Method | HTTP request | Description
  - [PageResultTransaction](docs/Model/PageResultTransaction.md)
  - [ParticipantInformationResponse](docs/Model/ParticipantInformationResponse.md)
  - [Party](docs/Model/Party.md)
+ - [PartyIdentifier](docs/Model/PartyIdentifier.md)
  - [PaymentLink](docs/Model/PaymentLink.md)
  - [PostPaymentRequest](docs/Model/PostPaymentRequest.md)
  - [ProcessInfo](docs/Model/ProcessInfo.md)
